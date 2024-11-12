@@ -4,7 +4,6 @@ import "./App.scss"
 import {Login} from './screens/Login';
 import {Register} from './screens/Signup';
 import {Home}from './screens/Home';
-import { Documents } from './screens/Home/Documents';
 import { logout, useClient } from './utils/request';
 import  Axios  from 'axios';
 
@@ -54,7 +53,6 @@ function App()
           {
             authenticated &&
             <Route path='/' element={<Home />}>
-              <Route path='home' index element={<Documents/>} />
             </Route>
           }
         </Routes>

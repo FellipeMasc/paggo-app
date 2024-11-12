@@ -5,6 +5,7 @@ import { useDummyRequest } from "../../utils/request";
 import "./styles.scss";
 import {CardAccount} from "./CardAccount";
 import { RequestCard } from "./Upload";
+import { Documents } from "./Documents";
 
 
 export const Home = () =>
@@ -20,7 +21,7 @@ export const Home = () =>
 					</Loading>
 					<CardAccount />
 					<RequestCard />
-					<Outlet />
+					<Documents/>
 				</div>
 			</Container>
 		</>

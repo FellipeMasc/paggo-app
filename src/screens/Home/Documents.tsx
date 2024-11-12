@@ -53,7 +53,6 @@ const Document = ({explanation, extractedText, document_id, uploadedAt, filename
 	const { visible, show, hide } = useShow()
 	const {visible: visibleQuery, show: showQuery, hide: hideQuery} = useShow()
 	const uploadedAtDate = new Date(uploadedAt);
-	const isLoading = useDummyRequest();
 	const formattedDate = `${uploadedAtDate.getDate().toString().padStart(2, '0')}/${(uploadedAtDate.getMonth() + 1).toString().padStart(2, '0')}/${uploadedAtDate.getFullYear()}`;
 	const handleDownload = async () => {
 		const file = await Axios.get(`user/download_llm_document/${document_id}`);
@@ -66,7 +65,6 @@ const Document = ({explanation, extractedText, document_id, uploadedAt, filename
 		link.remove();
 	}
 	return (
-		<Loading isLoading={isLoading} skeleton={{ height: 200 }}>
 			<section className="card-welcome teste-card bg-blue28 mt-4">
 				<article className="d-flex w-100">
 					<div className="d-flex flex-column  flex-1 ps-2 align-items-center" style={{ width: 100 }}>
@@ -95,6 +93,5 @@ const Document = ({explanation, extractedText, document_id, uploadedAt, filename
 				</article>
 
 			</section>
-		</Loading>
 	);
 };
