@@ -1,0 +1,1290 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@font-face {
+	font-family: "DIN Next LT Pro";
+	src: url("assets/fonts/DINNextLTPro-BlackCondensed.eot");
+	src: local("DIN Next LT Pro Black Condensed"),
+		local("DINNextLTPro-BlackCondensed"),
+		url("assets/fonts/DINNextLTPro-BlackCondensed.eot?#iefix") format("embedded-opentype"),
+		url("assets/fonts/DINNextLTPro-BlackCondensed.woff2") format("woff2"),
+		url("assets/fonts/DINNextLTPro-BlackCondensed.woff") format("woff"),
+		url("assets/fonts/DINNextLTPro-BlackCondensed.ttf") format("truetype");
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "DIN Next LT Pro";
+	src: url("assets/fonts/DINNextLTPro-Regular.eot");
+	src: local("DIN Next LT Pro Regular"), local("DINNextLTPro-Regular"),
+		url("assets/fonts/DINNextLTPro-Regular.eot?#iefix") format("embedded-opentype"),
+		url("assets/fonts/DINNextLTPro-Regular.woff2") format("woff2"),
+		url("assets/fonts/DINNextLTPro-Regular.woff") format("woff"),
+		url("assets/fonts/DINNextLTPro-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "DIN Next LT Pro";
+	src: url("assets/fonts/DINNextLTPro-Medium.eot");
+	src: local("DIN Next LT Pro Medium"), local("DINNextLTPro-Medium"),
+		url("assets/fonts/DINNextLTPro-Medium.eot?#iefix") format("embedded-opentype"),
+		url("assets/fonts/DINNextLTPro-Medium.woff2") format("woff2"),
+		url("assets/fonts/DINNextLTPro-Medium.woff") format("woff"),
+		url("assets/fonts/DINNextLTPro-Medium.ttf") format("truetype");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "DIN Next LT Pro";
+	src: url("assets/fonts/DINNextLTPro-BoldItalic.eot");
+	src: local("DIN Next LT Pro Bold Italic"), local("DINNextLTPro-BoldItalic"),
+		url("assets/fonts/DINNextLTPro-BoldItalic.eot?#iefix") format("embedded-opentype"),
+		url("assets/fonts/DINNextLTPro-BoldItalic.woff2") format("woff2"),
+		url("assets/fonts/DINNextLTPro-BoldItalic.woff") format("woff"),
+		url("assets/fonts/DINNextLTPro-BoldItalic.ttf") format("truetype");
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "DIN Next LT Pro";
+	src: url("assets/fonts/DINNextLTPro-UltraLightCond.eot");
+	src: local("DIN Next LT Pro UltraLight Condensed"),
+		local("DINNextLTPro-UltraLightCond"),
+		url("assets/fonts/DINNextLTPro-UltraLightCond.eot?#iefix") format("embedded-opentype"),
+		url("assets/fonts/DINNextLTPro-UltraLightCond.woff2") format("woff2"),
+		url("assets/fonts/DINNextLTPro-UltraLightCond.woff") format("woff"),
+		url("assets/fonts/DINNextLTPro-UltraLightCond.ttf") format("truetype");
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "DIN Next LT Pro Condensed";
+	src: url("assets/fonts/DINNextLTPro-BoldCondensed.eot");
+	src: local("DIN Next LT Pro Bold Condensed"),
+		local("DINNextLTPro-BoldCondensed"),
+		url("assets/fonts/DINNextLTPro-BoldCondensed.eot?#iefix") format("embedded-opentype"),
+		url("assets/fonts/DINNextLTPro-BoldCondensed.woff2") format("woff2"),
+		url("assets/fonts/DINNextLTPro-BoldCondensed.woff") format("woff"),
+		url("assets/fonts/DINNextLTPro-BoldCondensed.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "DIN Next Rounded LT Pro";
+	src: url("assets/fonts/DINNextRoundedLTPro-Light.eot");
+	src: local("DIN Next Rounded LT Pro Light"),
+		local("DINNextRoundedLTPro-Light"),
+		url("assets/fonts/DINNextRoundedLTPro-Light.eot?#iefix") format("embedded-opentype"),
+		url("assets/fonts/DINNextRoundedLTPro-Light.woff2") format("woff2"),
+		url("assets/fonts/DINNextRoundedLTPro-Light.woff") format("woff"),
+		url("assets/fonts/DINNextRoundedLTPro-Light.ttf") format("truetype");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "DIN Next LT Pro";
+	src: url("assets/fonts/DINNextLTPro-UltraLightIt.eot");
+	src: local("DIN Next LT Pro UltraLight Italic"),
+		local("DINNextLTPro-UltraLightIt"),
+		url("assets/fonts/DINNextLTPro-UltraLightIt.eot?#iefix") format("embedded-opentype"),
+		url("assets/fonts/DINNextLTPro-UltraLightIt.woff2") format("woff2"),
+		url("assets/fonts/DINNextLTPro-UltraLightIt.woff") format("woff"),
+		url("assets/fonts/DINNextLTPro-UltraLightIt.ttf") format("truetype");
+	font-weight: 200;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "DIN Next LT Pro";
+	src: url("assets/fonts/DINNextLTPro-UltraLight.eot");
+	src: local("DIN Next LT Pro UltraLight"), local("DINNextLTPro-UltraLight"),
+		url("assets/fonts/DINNextLTPro-UltraLight.eot?#iefix") format("embedded-opentype"),
+		url("assets/fonts/DINNextLTPro-UltraLight.woff2") format("woff2"),
+		url("assets/fonts/DINNextLTPro-UltraLight.woff") format("woff"),
+		url("assets/fonts/DINNextLTPro-UltraLight.ttf") format("truetype");
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "DIN Next LT Pro";
+	src: url("assets/fonts/DINNextLTPro-Condensed.eot");
+	src: local("DIN Next LT Pro Condensed"), local("DINNextLTPro-Condensed"),
+		url("assets/fonts/DINNextLTPro-Condensed.eot?#iefix") format("embedded-opentype"),
+		url("assets/fonts/DINNextLTPro-Condensed.woff2") format("woff2"),
+		url("assets/fonts/DINNextLTPro-Condensed.woff") format("woff"),
+		url("assets/fonts/DINNextLTPro-Condensed.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "DIN Next LT Pro";
+	src: url("assets/fonts/DINNextLTPro-Italic.eot");
+	src: local("DIN Next LT Pro Italic"), local("DINNextLTPro-Italic"),
+		url("assets/fonts/DINNextLTPro-Italic.eot?#iefix") format("embedded-opentype"),
+		url("assets/fonts/DINNextLTPro-Italic.woff2") format("woff2"),
+		url("assets/fonts/DINNextLTPro-Italic.woff") format("woff"),
+		url("assets/fonts/DINNextLTPro-Italic.ttf") format("truetype");
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "DIN Next Rounded LT Pro";
+	src: url("assets/fonts/DINNextRoundedLTPro-Medium.eot");
+	src: local("DIN Next Rounded LT Pro Medium"),
+		local("DINNextRoundedLTPro-Medium"),
+		url("assets/fonts/DINNextRoundedLTPro-Medium.eot?#iefix") format("embedded-opentype"),
+		url("assets/fonts/DINNextRoundedLTPro-Medium.woff2") format("woff2"),
+		url("assets/fonts/DINNextRoundedLTPro-Medium.woff") format("woff"),
+		url("assets/fonts/DINNextRoundedLTPro-Medium.ttf") format("truetype");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "DIN Next LT Pro";
+	src: url("assets/fonts/DINNextLTPro-Heavy.eot");
+	src: local("DIN Next LT Pro Heavy"), local("DINNextLTPro-Heavy"),
+		url("assets/fonts/DINNextLTPro-Heavy.eot?#iefix") format("embedded-opentype"),
+		url("assets/fonts/DINNextLTPro-Heavy.woff2") format("woff2"),
+		url("assets/fonts/DINNextLTPro-Heavy.woff") format("woff"),
+		url("assets/fonts/DINNextLTPro-Heavy.ttf") format("truetype");
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "DIN Next LT Pro";
+	src: url("assets/fonts/DINNextLTPro-HeavyItalic.eot");
+	src: local("DIN Next LT Pro Heavy Italic"), local("DINNextLTPro-HeavyItalic"),
+		url("assets/fonts/DINNextLTPro-HeavyItalic.eot?#iefix") format("embedded-opentype"),
+		url("assets/fonts/DINNextLTPro-HeavyItalic.woff2") format("woff2"),
+		url("assets/fonts/DINNextLTPro-HeavyItalic.woff") format("woff"),
+		url("assets/fonts/DINNextLTPro-HeavyItalic.ttf") format("truetype");
+	font-weight: 900;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "DIN Next LT Pro";
+	src: url("assets/fonts/DINNextLTPro-Bold.eot");
+	src: local("DIN Next LT Pro Bold"), local("DINNextLTPro-Bold"),
+		url("assets/fonts/DINNextLTPro-Bold.eot?#iefix") format("embedded-opentype"),
+		url("assets/fonts/DINNextLTPro-Bold.woff2") format("woff2"),
+		url("assets/fonts/DINNextLTPro-Bold.woff") format("woff"),
+		url("assets/fonts/DINNextLTPro-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "DIN Next Rounded LT Pro";
+	src: url("assets/fonts/DINNextRoundedLTPro-Regular.eot");
+	src: local("DIN Next Rounded LT Pro Regular"),
+		local("DINNextRoundedLTPro-Regular"),
+		url("assets/fonts/DINNextRoundedLTPro-Regular.eot?#iefix") format("embedded-opentype"),
+		url("assets/fonts/DINNextRoundedLTPro-Regular.woff2") format("woff2"),
+		url("assets/fonts/DINNextRoundedLTPro-Regular.woff") format("woff"),
+		url("assets/fonts/DINNextRoundedLTPro-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "DIN Next LT Pro";
+	src: url("assets/fonts/DINNextLTPro-Light.eot");
+	src: local("DIN Next LT Pro Light"), local("DINNextLTPro-Light"),
+		url("assets/fonts/DINNextLTPro-Light.eot?#iefix") format("embedded-opentype"),
+		url("assets/fonts/DINNextLTPro-Light.woff2") format("woff2"),
+		url("assets/fonts/DINNextLTPro-Light.woff") format("woff"),
+		url("assets/fonts/DINNextLTPro-Light.ttf") format("truetype");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "DIN Next Rounded LT Pro";
+	src: url("assets/fonts/DINNextRoundedLTPro-Bold.eot");
+	src: local("DIN Next Rounded LT Pro Bold"), local("DINNextRoundedLTPro-Bold"),
+		url("assets/fonts/DINNextRoundedLTPro-Bold.eot?#iefix") format("embedded-opentype"),
+		url("assets/fonts/DINNextRoundedLTPro-Bold.woff2") format("woff2"),
+		url("assets/fonts/DINNextRoundedLTPro-Bold.woff") format("woff"),
+		url("assets/fonts/DINNextRoundedLTPro-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "DIN Next LT Pro Medium Cond";
+	src: url("assets/fonts/DINNextLTPro-HeavyCondensed.eot");
+	src: local("DIN Next LT Pro Heavy Condensed"),
+		local("DINNextLTPro-HeavyCondensed"),
+		url("assets/fonts/DINNextLTPro-HeavyCondensed.eot?#iefix") format("embedded-opentype"),
+		url("assets/fonts/DINNextLTPro-HeavyCondensed.woff2") format("woff2"),
+		url("assets/fonts/DINNextLTPro-HeavyCondensed.woff") format("woff"),
+		url("assets/fonts/DINNextLTPro-HeavyCondensed.ttf") format("truetype");
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "DIN Next LT Pro";
+	src: url("assets/fonts/DINNextLTPro-LightItalic.eot");
+	src: local("DIN Next LT Pro Light Italic"), local("DINNextLTPro-LightItalic"),
+		url("assets/fonts/DINNextLTPro-LightItalic.eot?#iefix") format("embedded-opentype"),
+		url("assets/fonts/DINNextLTPro-LightItalic.woff2") format("woff2"),
+		url("assets/fonts/DINNextLTPro-LightItalic.woff") format("woff"),
+		url("assets/fonts/DINNextLTPro-LightItalic.ttf") format("truetype");
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "DIN Next LT Pro";
+	src: url("assets/fonts/DINNextLTPro-LightCondensed.eot");
+	src: local("DIN Next LT Pro Light Condensed"),
+		local("DINNextLTPro-LightCondensed"),
+		url("assets/fonts/DINNextLTPro-LightCondensed.eot?#iefix") format("embedded-opentype"),
+		url("assets/fonts/DINNextLTPro-LightCondensed.woff2") format("woff2"),
+		url("assets/fonts/DINNextLTPro-LightCondensed.woff") format("woff"),
+		url("assets/fonts/DINNextLTPro-LightCondensed.ttf") format("truetype");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "DIN Next LT Pro";
+	src: url("assets/fonts/DINNextLTPro-MediumItalic.eot");
+	src: local("DIN Next LT Pro Medium Italic"),
+		local("DINNextLTPro-MediumItalic"),
+		url("assets/fonts/DINNextLTPro-MediumItalic.eot?#iefix") format("embedded-opentype"),
+		url("assets/fonts/DINNextLTPro-MediumItalic.woff2") format("woff2"),
+		url("assets/fonts/DINNextLTPro-MediumItalic.woff") format("woff"),
+		url("assets/fonts/DINNextLTPro-MediumItalic.ttf") format("truetype");
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "DIN Next LT Pro";
+	src: url("assets/fonts/DINNextLTPro-Black.eot");
+	src: local("DIN Next LT Pro Black"), local("DINNextLTPro-Black"),
+		url("assets/fonts/DINNextLTPro-Black.eot?#iefix") format("embedded-opentype"),
+		url("assets/fonts/DINNextLTPro-Black.woff2") format("woff2"),
+		url("assets/fonts/DINNextLTPro-Black.woff") format("woff"),
+		url("assets/fonts/DINNextLTPro-Black.ttf") format("truetype");
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "DIN Next LT Pro";
+	src: url("assets/fonts/DINNextLTPro-MediumCond.eot");
+	src: local("DIN Next LT Pro Medium Condensed"),
+		local("DINNextLTPro-MediumCond"),
+		url("assets/fonts/DINNextLTPro-MediumCond.eot?#iefix") format("embedded-opentype"),
+		url("assets/fonts/DINNextLTPro-MediumCond.woff2") format("woff2"),
+		url("assets/fonts/DINNextLTPro-MediumCond.woff") format("woff"),
+		url("assets/fonts/DINNextLTPro-MediumCond.ttf") format("truetype");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "DIN Next LT Pro";
+	src: url("assets/fonts/DINNextLTPro-BlackItalic.eot");
+	src: local("DIN Next LT Pro Black Italic"), local("DINNextLTPro-BlackItalic"),
+		url("assets/fonts/DINNextLTPro-BlackItalic.eot?#iefix") format("embedded-opentype"),
+		url("assets/fonts/DINNextLTPro-BlackItalic.woff2") format("woff2"),
+		url("assets/fonts/DINNextLTPro-BlackItalic.woff") format("woff"),
+		url("assets/fonts/DINNextLTPro-BlackItalic.ttf") format("truetype");
+	font-weight: 900;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Poppins-Bold";
+	src: local("Poppins-Bold"),
+		url("assets/Poppins/Poppins-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Poppins-Light";
+	src: local("Poppins-Light"),
+		url("assets/Poppins/Poppins-Light.ttf") format("truetype");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Poppins";
+	src: local("Poppins-Medium"),
+		url("assets/Poppins/Poppins-Medium.ttf") format("truetype");
+	font-style: normal;
+}
+
+// @font-face {
+//   font-family: "Poppins-Regular";
+//   src: local("Poppins-Medium"), url("assets/Poppins/Poppins-Regular.ttf") format("truetype");
+//   font-style: normal;
+// }
+
+html {
+	padding: 0;
+	margin: 0;
+	background-color: inherit;
+}
+
+body {
+	background-color: inherit;
+}
+
+.App {
+	min-height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+
+	font-family: "DIN Next Rounded LT Pro";
+	font-size: large;
+	color: #4c4c4c;
+
+	width: 100%;
+	min-height: 100vh;
+
+	text-align: center;
+
+	background-color: inherit;
+}
+
+.poppins {
+	font-family: "Poppins";
+
+	.btn {
+		text-transform: unset;
+	}
+}
+
+#background-image {
+	min-height: 100%;
+	// min-width: 1200px;
+
+	width: 100%;
+	height: auto;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1000;
+
+	background-color: #6591B5;
+}
+
+
+
+.container-local {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	&.width-larger {
+		width: 50%;
+	}
+	padding: 0;
+	margin: 0 auto;
+	box-shadow: 0px 2px 6px rgb(51 51 51 / 25%);
+	background-color: #fff;
+
+	@media (max-width: 400px) {
+		min-width: 360px;
+	}
+
+	@media (max-width: 376px) {
+		min-width: 373px;
+
+	}
+
+	@media (max-width: 361px) {
+		min-width: 353px;
+
+	}
+
+	.ptr__children,
+	.ptr {
+		overflow: visible !important;
+	}
+
+	&.centered {
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.text-scrollable{
+	overflow-y: auto;
+	height: 400px;
+	width: 50%;
+}
+
+.modal-descricao {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+
+	.btn-modal {
+		width: 161px;
+		height: 40px;
+		font-size: 14px;
+		border: 1px solid #009dcc;
+		box-shadow: inset 0px -3px 0px rgba(51, 51, 51, 0.25);
+		border-radius: 4px;
+
+		&:hover {
+			opacity: 0.9;
+			box-shadow: none;
+			transition: 0.3s;
+		}
+
+		@media (min-width: 992px) {
+			width: 180px;
+		}
+	}
+}
+
+.container-padding {
+	position: relative;
+	// padding-top: 30px;
+	padding: 0 20px;
+	// margin: 0 auto;
+	overflow: hidden;
+	// padding-bottom: 115px;
+	min-width: 430px;
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+
+	&.margin {
+		margin-top: 75px;
+	}
+
+	&.centered {
+		flex-grow: 1;
+		margin: 0;
+		justify-content: center;
+		align-items: center;
+		padding-bottom: 0px;
+		width: 100%;
+	}
+
+	&.background-active {
+		background-color: #171243;
+	}
+}
+
+// Lines
+.line {
+	width: 100%;
+	height: 1px;
+	background: #e5e5e5;
+	border-radius: 12px;
+}
+
+.big-line {
+	width: 100%;
+	height: 2px;
+	background: #e5e5e5;
+	border-radius: 12px;
+}
+
+.line-heigth {
+	width: 2px;
+	height: 40px;
+	border-radius: 12px;
+	background-color: #e5e5e5;
+}
+
+.theme-dark .line {
+	background-color: #525666;
+}
+
+.theme-dark .big-line {
+	background-color: #525666;
+}
+
+// Text color
+.purple {
+	color: #6f2282 !important;
+}
+
+.purple-v2 {
+	color: #522E92 !important;
+}
+
+.blue {
+	color: #009dcc !important;
+}
+
+.blue28 {
+	color: #282d4a;
+}
+
+.gray {
+	color: #c4c4c4;
+}
+
+.gray4c {
+	color: #4c4c4c !important;
+}
+
+.gray28 {
+	color: #282d4a !important;
+}
+
+.grayc8 {
+	color: #c8c8c8;
+}
+
+.grayaf {
+	color: #afafaf !important;
+}
+
+.gray39 {
+	color: #393939;
+}
+
+.grayf0 {
+	color: #f0f1f8;
+}
+
+.pink {
+	color: #e73089;
+}
+
+.white {
+	color: #ffffff;
+}
+
+.red {
+	color: #e73030;
+}
+
+.coral {
+	color: #f45151;
+}
+
+.yellow {
+	color: #ffbd00;
+}
+
+.marrom {
+	color: #c6855b !important;
+}
+
+.green {
+	color: #0acc8f !important;
+}
+
+// Background colors
+.bg-purple {
+	background-color: #6f2282 !important;
+}
+
+.bg-purple9b {
+	background-color: #9bace8 !important;
+}
+
+.bg-purplee0 {
+	background-color: #e0aee8 !important;
+}
+
+.bg-blue {
+	background-color: #009dcc !important;
+}
+
+.bg-blue28 {
+	background-color: #282d4a;
+}
+
+.bg-blue00 {
+	background-color: #006c8c;
+}
+
+.bg-green {
+	background-color: #0acc8f !important;
+}
+
+.bg-green06 {
+	background-color: #069467 !important;
+}
+
+.bg-green98 {
+	background-color: #98d6a2;
+}
+
+.bg-red {
+	background-color: #e73030 !important;
+}
+
+.bg-graye5 {
+	background-color: #e5e5e5 !important;
+}
+
+.bg-marrom {
+	background-color: #c6855b !important;
+}
+
+.bg-pa {
+	background-color: #21263c !important;
+}
+
+.bg-pink {
+	background-color: #e73089;
+}
+
+.bg-pinkfc {
+	background-color: #fcb5f0;
+}
+
+.bg-orangefc {
+	background-color: #fcba88;
+}
+
+.bg-yellow {
+	background-color: #faa300;
+}
+
+.bg-grayaf {
+	background-color: #afafaf;
+}
+
+.bg-grayf0 {
+	background-color: #f0f1f8;
+}
+
+// Font weights
+.fw-300 {
+	font-weight: 300 !important;
+}
+
+.fw-500 {
+	font-weight: 500 !important;
+}
+
+.fw-600 {
+	font-weight: 600;
+}
+
+.fw-700 {
+	font-weight: 700;
+}
+
+.fw-bold {
+	font-weight: bold;
+}
+
+// Font sizes
+.f8 {
+	font-size: 8px !important;
+}
+
+.f10 {
+	font-size: 10px !important;
+}
+
+.f12 {
+	font-size: 12px !important;
+}
+
+.f14 {
+	font-size: 14px;
+}
+
+.f16 {
+	font-size: 16px;
+}
+
+.f20 {
+	font-size: 20px;
+}
+
+.f24 {
+	font-size: 24px;
+}
+
+.f32 {
+	font-size: 32px;
+}
+
+.f40 {
+	font-size: 40px;
+}
+
+// Text styles
+.text-gold {
+	font-size: 16px;
+	color: #ffbd00;
+	font-weight: 500;
+}
+
+.text-red {
+	font-size: 16px;
+	color: #e73030;
+	font-weight: 500;
+
+	&.timer {
+		width: 27px;
+		text-align: center;
+	}
+}
+
+.line-title {
+	font-size: 12px;
+	font-weight: 500;
+	text-align: center;
+	color: #afafaf;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+
+	&::after,
+	&::before {
+		content: "";
+		// position: absolute;
+		border-radius: 12px;
+		display: block;
+		height: 2px;
+		flex-grow: 1;
+		background-color: #e5e5e5;
+	}
+
+	&::after {
+		right: 0;
+		margin-left: 8px;
+	}
+
+	&::before {
+		left: 0;
+		margin-right: 8px;
+	}
+}
+
+.subtitle-text {
+	line-height: 1;
+	font-size: 12px;
+	font-weight: 500;
+	color: #afafaf;
+	text-indent: 0;
+}
+
+// Base components
+
+//base buttons
+.btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 52px;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 8px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+	cursor: pointer;
+	box-shadow: inset 0px -3px 0px rgb(51 51 51 / 25%);
+	transition: 0.3s;
+
+	&:hover {
+		opacity: 0.9;
+		color: #fff;
+		box-shadow: none;
+		transition: 0.3s;
+	}
+
+	&:active {
+		transform: translateY(2px);
+		box-shadow: inset 0px -2px 0px rgba(51, 51, 51, 0.25);
+	}
+
+	&:disabled {
+		background-color: #efefef !important;
+		color: #4c4c4c !important;
+		// cursor: pointer !important;
+
+		&:hover {
+			opacity: 1;
+			color: #4c4c4c !important;
+		}
+	}
+}
+
+.btn-v1 {
+	font-family: "Poppins" !important;
+	height: 40px;
+	border: transparent;
+	box-shadow: inset 0px -2px 0px rgba(51, 51, 51, 0.25);
+	border-radius: 50px;
+	font-weight: 500;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	span {
+		flex: 1;
+	}
+
+	&:disabled {
+		background-color: #efefef !important;
+		color: #afafaf !important;
+	}
+
+	&:not([disabled]) {
+		&:hover {
+			opacity: 0.9;
+			box-shadow: none;
+			transition: 0.3s;
+		}
+
+		&:active {
+			cursor: pointer;
+			transform: translateY(3px);
+			transition: 0.1s;
+			box-shadow: none;
+		}
+	}
+}
+
+.btn-back {
+	display: flex;
+	align-items: center;
+	width: 76px;
+	height: 32px;
+	border-radius: 50px;
+	box-shadow: 0px 3px 3px rgba(40, 45, 74, 0.3);
+	padding-left: 10px;
+	border: none;
+
+	span {
+		flex: 1;
+	}
+
+	// @media (min-width: 768px) {
+	// 	width: 90px;
+	// }
+}
+
+.btn-back:focus {
+	cursor: pointer;
+	transform: translateY(3px);
+	transition: 0.1s;
+	box-shadow: none;
+}
+
+.btn-lower {
+	text-transform: unset;
+}
+
+.btn-small {
+	height: 40px;
+}
+
+.btn-blue {
+	background-color: #009dcc !important;
+	color: #fff !important;
+}
+
+.btn-pink {
+	background-color: #e73089 !important;
+	color: #fff !important;
+}
+
+.btn-purple {
+	background-color: #6f2282 !important;
+	color: #fff !important;
+}
+
+.btn-green {
+	background-color: #0acc8f !important;
+	color: #fff !important;
+}
+
+.btn-orange {
+	background-color: #fd6930 !important;
+	color: #fff !important;
+}
+
+.btn-gray {
+	background-color: #efefef !important;
+}
+
+.border-yellow {
+	border: 1px solid #ffbd00 !important;
+}
+
+.border-red {
+	border: 1px solid #e73030 !important;
+}
+
+.border-purple {
+	border: 1px solid #6f2282 !important;
+}
+
+.border-blue {
+	border: 1px solid #009dcc !important;
+}
+
+.border-grayc8 {
+	border: 1px solid #c8c8c8;
+}
+
+//cards
+.card {
+	box-sizing: border-box;
+	padding: 16px 12px;
+	padding-bottom: 24px;
+	background: #fff;
+	border: 1px solid #e5e5e5;
+	border-radius: 8px;
+	box-shadow: inset 0px -3px 0px rgb(51 51 51 / 25%);
+
+	font-size: 16px;
+	font-weight: 400;
+
+	&.card-green {
+		box-shadow: inset 0px -2px 0px rgb(10 204 143 / 55%);
+		border-color: #0acc8f;
+	}
+}
+
+.card-border-dotted {
+	box-sizing: border-box;
+	padding: 8px 12px;
+	background: #fff;
+	border: 2px dotted #e5e5e5;
+	border-radius: 8px;
+
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.card-maxcoins {
+	width: 107px;
+	height: 52px;
+	border: 1px solid #afafaf;
+	box-shadow: inset 0px -4px 0px rgba(51, 51, 51, 0.25);
+	border-radius: 8px;
+}
+
+.card-blue {
+	width: 100%;
+	height: 113px;
+	display: flex;
+	position: relative;
+	flex-direction: column;
+
+	box-shadow: 0px 3px 3px 0px rgba(40, 45, 74, 0.3);
+	border-radius: 20px;
+	padding-top: 0.8rem;
+	padding-left: 0.8rem;
+	padding-bottom: 2rem;
+	padding-right: 4rem;
+
+	&.h90 {
+		height: 90px;
+	}
+}
+
+.card-blue__trilha {
+	width: 100%;
+	height: 113px;
+	display: flex;
+	position: relative;
+	flex-direction: column;
+
+	box-shadow: 0px 3px 3px 0px rgba(40, 45, 74, 0.3);
+	border-radius: 20px;
+	padding-top: 0.8rem;
+	padding-left: 0.8rem;
+	padding-bottom: 2rem;
+
+	&.h90 {
+		height: 90px;
+	}
+}
+
+.card-trilha {
+	padding: 8px 12px;
+	padding-bottom: 16px;
+	background: #fff;
+	border: 1px solid #e5e5e5;
+	border-radius: 20px;
+	box-shadow: 0px -2px 0px 0px #c8c8c8 inset;
+	transition: transform 0.5s ease-in-out;
+
+	.tipo-trilha {
+		border-radius: 20px;
+		padding: 3px 10px;
+		font-size: 10px;
+		color: white;
+		background-color: #282D4A;
+		position: absolute;
+		top: 0;
+		transform: translate(0, -50%);
+	}
+
+	&.plano-acao {
+		.tipo-trilha {
+			background-color: #522E92;
+		}
+	}
+}
+
+.card-trilha:hover {
+	cursor: pointer;
+	transform: scale(1.05);
+}
+
+.modal-content {
+	font-family: "DIN Next Rounded LT Pro" !important;
+	position: relative;
+	font-size: large;
+	color: #4c4c4c;
+	border: none;
+	border-radius: 8px;
+	// width: 335px;
+	text-align: center;
+
+	max-width: 460px;
+	width: 96%;
+	// margin-left: -17.25px;
+}
+
+.modal-dialog {
+	justify-content: center;
+}
+
+.modal-body {
+	box-sizing: border-box;
+	padding: 16px 12px;
+	padding-bottom: 20px;
+	background: #fff;
+	border: 2px solid #e5e5e5;
+	border-radius: 8px;
+	box-shadow: inset 0px -3px 0px rgb(51 51 51 / 25%);
+
+	font-size: 16px;
+	font-weight: 400;
+
+	.close-modal {
+		position: absolute;
+		right: 12px;
+
+		cursor: pointer;
+	}
+}
+
+.modal-open {
+	overflow: auto !important;
+	padding-right: 0 !important;
+}
+
+// Cursor
+.cursor-pointer {
+	cursor: pointer;
+}
+
+.cursor-not {
+	cursor: not-allowed;
+}
+
+.icon-back {
+	cursor: pointer;
+	transition: 0.3s;
+
+	&:hover {
+		transform: translateX(4px);
+	}
+}
+
+// Estilos ProgressBar e Progress
+.progress-bar {
+	border-radius: 8px;
+	box-shadow: inset 0px -1px 0px rgba(51, 51, 51, 0.25);
+}
+
+.progress {
+	box-shadow: inset 0px -1px 0px rgba(51, 51, 51, 0.25);
+	border-radius: 8px;
+}
+
+.pregado-embaixo {
+	position: fixed;
+	bottom: 0px;
+	padding-bottom: 20px;
+
+	max-width: 460px;
+	width: 92%;
+
+	z-index: 131;
+
+	background-color: white;
+
+	&.no-bg {
+		background-color: inherit;
+	}
+}
+
+.theme-dark .pregado-embaixo {
+	background-color: #21263c;
+}
+
+// MODAL
+.modal-body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.btn-modal-close {
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	cursor: pointer;
+}
+
+.flex-1 {
+	flex: 1;
+}
+
+.flex-2 {
+	flex: 2;
+}
+
+.flex-3 {
+	flex: 3;
+}
+
+.flex-4 {
+	flex: 4;
+}
+
+.flex-5 {
+	flex: 5;
+}
+
+.smartbanner__info__price {
+	display: none;
+}
+
+.border-right-none {
+	border-right: none;
+}
+
+.border-left-none {
+	border-left: none;
+}
+
+.border-dotted {
+	border: dotted 2px #afafaf;
+	border-radius: 8px;
+}
+
+.one-liner {
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 1;
+	line-clamp: 1;
+	overflow: hidden;
+	white-space: nowrap;
+	max-width: 100%;
+}
+
+p,
+span,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	word-break: break-word !important;
+}
+
+.pregado-embaixo-v2 {
+	position: fixed;
+	bottom: 0px;
+	padding-bottom: 10px;
+
+	z-index: 5;
+
+	background-color: white;
+
+	&.no-bg {
+		background-color: inherit;
+	}
+
+	margin-left: -20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	width: 100%;
+	max-width: 500px;
+	border-radius: 20px 20px 0px 0px;
+
+	box-shadow: 0px -2px 0px #e5e5e5;
+}
+
+// animation from card
+.animeLeft {
+	opacity: 0;
+	transform: translateX(-25px);
+	animation: animeLeft 0.8s forwards;
+}
+
+@keyframes animeLeft {
+	to {
+		opacity: 1;
+		transform: initial;
+	}
+}
+
+
+.not-alowed {
+	cursor: not-allowed !important;
+}
+
+.display-inline {
+	p {
+		display: inline;
+	}
+}
+
+.bg-green-2 {
+	background: rgba(10, 204, 143, 0.1);
+}
+
+.bg-yellow2 {
+	background: rgba(250, 163, 0, 0.2);
+}
+
+.bg-red2 {
+	background: rgba(231, 48, 48, 0.1);
+}

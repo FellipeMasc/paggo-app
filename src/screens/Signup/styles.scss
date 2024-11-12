@@ -1,0 +1,123 @@
+.signup-page {
+	max-height: 100vh;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	align-items: center;
+
+	.content-init {
+		h1 {
+			margin-top: 0;
+			// margin-bottom: 5px;
+		}
+	}
+
+	form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+	}
+
+	.input-box {
+		position: relative;
+		width: 80%;
+		height: 50px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 15px;
+
+		img {
+			position: absolute;
+			left: 13px;
+			top: 30%;
+		}
+
+		.eye {
+			position: absolute;
+			left: 220px;
+			top: 30%;
+		}
+
+		@media (max-width: 480px) {
+			.eye {
+				left: 210px;
+			}
+		}
+	}
+
+	.form-login {
+		font-size: 16px;
+		font-weight: 400;
+		color: #afafaf;
+		height: 50px;
+		width: 100%;
+		background-color: #fafafa;
+		border: 1px solid #afafaf;
+		border-radius: 8px;
+		background-repeat: no-repeat;
+		padding-left: 40px;
+
+		&::placeholder {
+			font-size: 16px;
+			font-weight: 400;
+			color: #afafaf;
+		}
+	}
+
+	.esqueci-senha {
+		&:hover {
+			transform: scale(1);
+			color: #009dcc;
+			text-decoration: underline;
+			cursor: pointer;
+		}
+	}
+
+	.register {
+		width: 60%;
+		object-fit: cover;
+		margin-top: -10px;
+	}
+
+	.btn {
+		width: 80%;
+	}
+
+	.recovery {
+		width: 80%;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		margin-top: 10px;
+
+		.hl {
+			margin: 0 10px;
+		}
+
+		.esqueci-senha {
+			color: #000000;
+		}
+
+		.cadastro {
+			color: #000000;
+		}
+	}
+
+	.help {
+		width: 80%;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 40px;
+
+		a {
+			color: #000000;
+		}
+	}
+}
