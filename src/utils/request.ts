@@ -2,13 +2,14 @@ import Axios from "axios";
 import { useQuery, useMutation, useQueryClient, UseQueryOptions, QueryKey } from '@tanstack/react-query'
 import { useEffect, useState } from "react";
 import { z, ZodType } from "zod";
+const env = process.env.NODE_ENV || 'local';
 
 const defaults_urls: { [key: string]: string } = {
     local: 'http://127.0.0.1:8000/',
-    prod: ''
+    prod: 'https://paggo-api.onrender.com/'
 }
 
-Axios.defaults.baseURL = defaults_urls.local;
+Axios.defaults.baseURL = defaults_urls[env];
 
 export const useShow: (defaultVisibility?: boolean) => {
   visible: boolean;
