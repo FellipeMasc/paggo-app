@@ -1,5 +1,5 @@
 import * as React from "react";
-import { FC, useEffect, useState } from "react";
+import { FC, useState } from "react";
 import "./styles.scss";
 
 import Container from "../../components/Container";
@@ -7,28 +7,8 @@ import Axios from "axios";
 
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { useLocation } from "react-router-dom";
 import Loading from "../../components/Loading";
 import { useDummyRequest, usePost } from "../../utils/request";
-
-
-
-interface LogoutProps {
-	setAuthenticated: (authenticated: boolean) => void;
-	navigate: (path: string) => void;
-}
-
-const logout = ({ setAuthenticated, navigate }: LogoutProps): void => {
-	setAuthenticated(false);
-
-	navigate && navigate('/');
-
-	Axios.defaults.headers.common = {
-		Accept: 'application/json',
-		'Content-Type': 'application/json',
-		Authorization: ""
-	};
-}
 
 interface LoginProps {
 	setAuthenticated: (authenticated: boolean) => void;
@@ -36,8 +16,6 @@ interface LoginProps {
 
 export const Login: FC<LoginProps> = ({ setAuthenticated }) =>
 {
-	const navigate = useNavigate()
-	const queryParams = useLocation().search
 	const isLoading = useDummyRequest()
 
 	return (
@@ -82,7 +60,6 @@ const InputFields: FC<LoginProps> = ({ setAuthenticated }) => {
 
 	const navigate = useNavigate()
 
-	let decoded_token = null
 	const loginHandler = (e: React.FormEvent<HTMLFormElement>): void =>
 	{
 		e.preventDefault();

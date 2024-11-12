@@ -1,33 +1,13 @@
 import * as React from "react";
-import { FC, useEffect, useState } from "react";
+import { FC, useState } from "react";
 import "./styles.scss";
 import Container from "../../components/Container";
 import Axios from "axios";
 
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { useLocation } from "react-router-dom";
 import Loading from "../../components/Loading";
 import { useDummyRequest, usePost } from "../../utils/request";
-
-
-
-interface LogoutProps {
-	setAuthenticated: (authenticated: boolean) => void;
-	navigate: (path: string) => void;
-}
-
-const logout = ({ setAuthenticated, navigate }: LogoutProps): void => {
-	setAuthenticated(false);
-
-	navigate && navigate('/');
-
-	Axios.defaults.headers.common = {
-		Accept: 'application/json',
-		'Content-Type': 'application/json',
-		Authorization: ""
-	};
-}
 
 interface RegisterProps {
 	setAuthenticated: (authenticated: boolean) => void;
@@ -35,10 +15,7 @@ interface RegisterProps {
 
 export const Register: FC<RegisterProps> = ({ setAuthenticated }) =>
 {
-	const navigate = useNavigate()
-	const queryParams = useLocation().search
 	const isLoading = useDummyRequest()
-
 
 	return (
 		<Container topNav={false} centered width={false}>
@@ -85,7 +62,6 @@ const InputFields: FC<InputFieldsProps> = ({ setAuthenticated }) =>
 
 	const navigate = useNavigate()
 
-	let decoded_token = null
 	const loginHandler = (e: React.FormEvent<HTMLFormElement>): void =>
 	{
 		e.preventDefault();
@@ -123,7 +99,7 @@ const InputFields: FC<InputFieldsProps> = ({ setAuthenticated }) =>
 				<input id="password" type={`${showPassword ? "text" : "password"}`} className="form-login w-100" placeholder="Senha"
 					value={password} onChange={(e) =>
 					{
-						setPassword((s) =>
+						setPassword(() =>
 						{
 							setErrorAuthorization(e.target.value != passwordConfirmation
 							); return e.target.value
@@ -140,7 +116,7 @@ const InputFields: FC<InputFieldsProps> = ({ setAuthenticated }) =>
 				<input id="password-confirmation" type={`${showPasswordConfirmation ? "text" : "password"}`} className="form-login w-100" placeholder="Confirme sua senha"
 					value={passwordConfirmation} onChange={(e) =>
 					{
-						setPasswordConfirmation((s) =>
+						setPasswordConfirmation(() =>
 						{
 							setErrorAuthorization(password != e.target.value
 							); return e.target.value
@@ -164,13 +140,3 @@ const InputFields: FC<InputFieldsProps> = ({ setAuthenticated }) =>
 	)
 }
 
-const Help = () =>
-{
-	return (
-		<div className="d-flex justify-content-center f12 fw-500 flex-column mt-5 mb-2 help">
-			<a href="" className="black text-center text-decoration-none">Contate nosso suporte</a>
-			<a href="" target="_blank"
-				className="black lh-1 text-center text-decoration-none mt-2">Política de privacidade</a>
-		</div>
-	)
-}

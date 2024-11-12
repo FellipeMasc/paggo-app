@@ -2,7 +2,7 @@ import Modal from "react-bootstrap/Modal"
 import { usePost } from "../utils/request";
 
 export const ModalQuery = ({ show, onHide, document_id } : { show: boolean; onHide: () => void ; document_id : number}) => {
-		const {isLoading, mutate} = usePost("query_llm", {retry: false});
+		const {mutate} = usePost("query_llm", {retry: false});
 		const handleQuery = () => {
 			const queryText = (document.querySelector(".input-modal") as HTMLTextAreaElement).value;
 			mutate({documentId: document_id, query: queryText},

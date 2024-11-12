@@ -1,5 +1,4 @@
 import Container from "../../components/Container";
-import { Outlet} from "react-router-dom";
 import Loading from "../../components/Loading";
 import { useDummyRequest } from "../../utils/request";
 import "./styles.scss";

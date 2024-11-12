@@ -1,4 +1,4 @@
-import Axios, { AxiosError } from "axios";
+import Axios from "axios";
 import { useQuery, useMutation, useQueryClient, UseQueryOptions, QueryKey } from '@tanstack/react-query'
 import { useEffect, useState } from "react";
 import { z, ZodType } from "zod";

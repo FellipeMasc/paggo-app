@@ -1,9 +1,6 @@
-import React from "react";
 import "./styles.scss";
-import { Link } from "react-router-dom";
 import Loading from "../../components/Loading";
-import { useDummyRequest, useGet, useShow } from "../../utils/request";
-import ProgressBar from "react-bootstrap/ProgressBar";
+import { useGet, useShow } from "../../utils/request";
 import { ModalDescricao } from "../../components/ModalDescricaoDoc";
 import { ModalQuery } from "../../components/ModalQuery";
 import Axios from "axios";
@@ -15,21 +12,6 @@ export interface Documents {
 		extractedText: string;
 		uploadedAt: string;
 }
-
-
-const ProgressLive = () =>
-{
-
-	return (
-		<div className="d-flex flex-column flex-fill">
-			<div className=" d-flex justify-content-between f12 fw-500">
-				<p className="grayaf m-0">Treino 1/5</p>
-				<p className="purple mb-0">{20}%</p>
-			</div>
-			<ProgressBar now={20} striped animated />
-		</div>
-	);
-};
 
 export function Documents() {
 	const {isLoading, data} : {isLoading : boolean, data? : Documents[]} = useGet("user/documents", {retry: false});
@@ -87,7 +69,7 @@ const Document = ({explanation, extractedText, document_id, uploadedAt, filename
 								Realizar alguma consulta no que foi extraído
 							</button>
 						</div>
-							<ModalDescricao show={visible} onHide={hide} explanation={explanation} extractedText={extractedText} document_id={document_id}/>
+							<ModalDescricao show={visible} onHide={hide} explanation={explanation} extractedText={extractedText}/>
 							<ModalQuery show={visibleQuery} onHide={hideQuery} document_id={document_id}/>
 					</div>
 				</article>

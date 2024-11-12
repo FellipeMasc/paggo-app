@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from 'react';
-import { useClient, usePost, useShow } from '../../utils/request';
+import { useRef, useState } from 'react';
+import { useClient } from '../../utils/request';
 import Axios from "axios";
 
 const FileUpload = () => {
@@ -43,7 +43,7 @@ const FileUpload = () => {
         formData.append("file", selectedFile);
       }
 
-      const response = await Axios.post(
+      await Axios.post(
         "post_documents",
         formData,
         {
@@ -137,85 +137,85 @@ export const RequestCard = () => {
 }
 
 
-const UploadForm = () => {
+// const UploadForm = () => {
 
-	// const {isLoading, data} = usePost("post_documents", {retry: false});
+// 	// const {isLoading, data} = usePost("post_documents", {retry: false});
 
-	const [file, setFile] = useState<File | null>(null);
-	const [error, setError] = useState<string | null>(null);
-	const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-		const selected = e.target.files?.[0];
-		const types = ['image/png', 'image/jpeg'];
+// 	const [file, setFile] = useState<File | null>(null);
+// 	const [error, setError] = useState<string | null>(null);
+// 	const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+// 		const selected = e.target.files?.[0];
+// 		const types = ['image/png', 'image/jpeg'];
 
-		if (selected && types.includes(selected.type)) {
-			setFile(selected);
-			setError(null);
-		} else {
-			setFile(null);
-			setError('Please select an image file (png or jpeg)');
-		}
+// 		if (selected && types.includes(selected.type)) {
+// 			setFile(selected);
+// 			setError(null);
+// 		} else {
+// 			setFile(null);
+// 			setError('Please select an image file (png or jpeg)');
+// 		}
 
-		if (file) {
-			const formData = new FormData();
-			formData.append('file', file);
+// 		if (file) {
+// 			const formData = new FormData();
+// 			formData.append('file', file);
 
-			// request
-			// axios.post('http://localhost:8000/upload', formData).then(() => {
-			// 	console.log('file uploaded');
-			// });
-		}
+// 			// request
+// 			// axios.post('http://localhost:8000/upload', formData).then(() => {
+// 			// 	console.log('file uploaded');
+// 			// });
+// 		}
 
-	};
-	const handleUpdate = (e: React.ChangeEvent<HTMLInputElement>) => {
-		const selected = e.target.files?.[0];
-		const types = ['image/png', 'image/jpeg'];
+// 	};
+// 	const handleUpdate = (e: React.ChangeEvent<HTMLInputElement>) => {
+// 		const selected = e.target.files?.[0];
+// 		const types = ['image/png', 'image/jpeg'];
 
-		if (selected && types.includes(selected.type)) {
-			setFile(selected);
-			setError(null);
-		} else {
-			setFile(null);
-			setError('Please select an image file (png or jpeg)');
-		}
-	}
+// 		if (selected && types.includes(selected.type)) {
+// 			setFile(selected);
+// 			setError(null);
+// 		} else {
+// 			setFile(null);
+// 			setError('Please select an image file (png or jpeg)');
+// 		}
+// 	}
 
-	return (
-		<>
-			<span>Faça upload de algum documento</span>
-			<form>
-				<input type="file" onChange={handleUpdate}/>
-				<div className="output">
-					{error && <div className="error">{error}</div>}
-				</div>
-			</form>
-		</>
-	);
-}
+// 	return (
+// 		<>
+// 			<span>Faça upload de algum documento</span>
+// 			<form>
+// 				<input type="file" onChange={handleUpdate}/>
+// 				<div className="output">
+// 					{error && <div className="error">{error}</div>}
+// 				</div>
+// 			</form>
+// 		</>
+// 	);
+// }
 
-const RequestFix = () => {
-	const [file, setFile] = useState<File | null>(null);
-	const [error, setError] = useState<string | null>(null);
-	const { visible, show, hide } = useShow()
-	const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-		const selected = e.target.files?.[0];
-		const types = ['image/png', 'image/jpeg'];
+// const RequestFix = () => {
+// 	const [file, setFile] = useState<File | null>(null);
+// 	const [error, setError] = useState<string | null>(null);
+// 	const { visible, show, hide } = useShow()
+// 	const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+// 		const selected = e.target.files?.[0];
+// 		const types = ['image/png', 'image/jpeg'];
 
-		if (selected && types.includes(selected.type)) {
-			setFile(selected);
-			setError(null);
-		} else {
-			setFile(null);
-			setError('Please select an image file (png or jpeg)');
-		}
-	};
+// 		if (selected && types.includes(selected.type)) {
+// 			setFile(selected);
+// 			setError(null);
+// 		} else {
+// 			setFile(null);
+// 			setError('Please select an image file (png or jpeg)');
+// 		}
+// 	};
 
-	return (
-		<>
-		 <button className="f14 fw-500 blue mt-2" onClick={show}>
-          Solicitar nova explicação de algum documento
-      </button>
-		</>
-	);
-}
+// 	return (
+// 		<>
+// 		 <button className="f14 fw-500 blue mt-2" onClick={show}>
+//           Solicitar nova explicação de algum documento
+//       </button>
+// 		</>
+// 	);
+// }
 
 

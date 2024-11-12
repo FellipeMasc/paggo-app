@@ -1,8 +1,6 @@
-import React from "react";
 import "./styles.scss";
-import { Link } from "react-router-dom";
 import Loading from "../../components/Loading";
-import { useDummyRequest, useGet } from "../../utils/request";
+import { useGet } from "../../utils/request";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import { Documents } from "./Documents";
 

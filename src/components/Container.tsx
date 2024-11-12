@@ -1,4 +1,3 @@
-import * as React from "react";
 
 import { ReactNode } from "react";
 
@@ -6,7 +5,6 @@ const Container = ({
   children,
   topNav = true,
   centered = false,
-  refresh_queries = [],
   paddingBottom = true,
   background = false,
   width = true

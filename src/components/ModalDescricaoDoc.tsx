@@ -1,6 +1,6 @@
 import Modal from "react-bootstrap/Modal"
 
-export const ModalDescricao = ({ show, onHide, explanation, extractedText, document_id } : { show: boolean; onHide: () => void ; explanation : string; extractedText : string; document_id : number}) => {
+export const ModalDescricao = ({ show, onHide, explanation, extractedText} : { show: boolean; onHide: () => void ; explanation : string; extractedText : string}) => {
 		return (
 			<Modal show={show} onHide={onHide} centered>
 				<Modal.Body className="modal-descricao">
