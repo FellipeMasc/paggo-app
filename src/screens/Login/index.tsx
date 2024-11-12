@@ -76,7 +76,7 @@ const InputFields: FC<LoginProps> = ({ setAuthenticated }) => {
 					Authorization: `Bearer ${data.access_token}`
 				};
 				setAuthenticated(true)
-				navigate('/')
+				navigate('/home')
 			},
 			onError: (error: any) =>
 			{
