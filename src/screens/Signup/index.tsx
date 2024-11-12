@@ -77,7 +77,7 @@ const InputFields: FC<InputFieldsProps> = ({ setAuthenticated }) =>
 				localStorage.setItem('token', data.access_token);
 				localStorage.setItem('user', JSON.stringify(data.id));
 				setAuthenticated(true)
-				navigate('/home')
+				navigate('/')
 			},
 			onError: () =>
 			{
